@@ -12,8 +12,8 @@ bot.on('ready', () => {
 //WELCOME
  
 Welcome(bot, {
-    privatemsg : "Welcome to the The Hytale Network Discord Server!",
-    publicmsg : "Welcome @MEMBER to the The Hytale Network  Discord Server!",
+    privatemsg : "Welcome to the The Hytale Press Discord Server!",
+    publicmsg : "Welcome @MEMBER to the The Hytale Press  Discord Server!",
     publicchannel : "new-members"
     });
 
@@ -22,7 +22,7 @@ bot.on('message', (message) => {
 
     for (x = 0; x < profanities.length; x++) {
           if (message.content.toUpperCase() == profanities[x].toUpperCase()) {
-          message.author.send(`[The Hytale Network Discord Security] Swearing is not permitted here. Please refrain from swearing! ${message.author}`);
+          message.author.send(`[Hytale Hypress Discord Security] Swearing is not permitted here. Please refrain from swearing! ${message.author}`);
           message.delete();
           return;
       }
@@ -33,15 +33,15 @@ bot.on('message', (message) => {
 //CUSTOM COMMANDS START HERE
     if(message.content == '!invitelink') {
         //message.reply('http://discord.gg/EZmtUGD');
-        message.channel.sendMessage('http://discord.gg/EZmtUGD');
+        message.channel.sendMessage('https://discord.gg/ZBUA8NU');
     }
-    if(message.content == '!hytalenetwork') {
+    if(message.content == '!hytalepress') {
         //message.reply('Hello there, I am the official Hytale Network Discord Bot!');
-        message.channel.sendMessage('Hello there, I am the official Hytale Network Discord Bot!');
+        message.channel.sendMessage('Hello there, I am the official Hytale Press Discord Bot!');
     }
-    if(message.content == '!owners') {
+    if(message.content == '!owner') {
         //message.reply('@GoldenSpark1#1259 & @(Matt) Fenzzy#4372');
-        message.channel.sendMessage('@GoldenSpark1#1259 & @(Matt)Fenzzy#4372');
+        message.channel.sendMessage('@Frazier#1259');
     }
     if(message.content == '!help') {
         //message.reply('Need help? Contact a Staff Representative!');
@@ -49,9 +49,9 @@ bot.on('message', (message) => {
     }
     if(message.content == '!hytale') {
         //message.reply('The Hytale Network);
-        message.channel.sendMessage('The Hytale Network');
+        message.channel.sendMessage('Hytale.com');
     }
 });
 
 //BOT LOGIN STARTS HERE
-bot.login('NTI1NjcyNTM3MzY4Mjk3NDg3.Dy3yfQ.9EYlMZH6HQavf275FjhP8sHI6j4');
+bot.login('NTYwOTYxNzQ4ODA3NzEyNzc5.D37j9w.XkSUiqZC7f8oauw-3HwErJMh-0s');
